@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "project-ebac-shoes",
+			"path": "."
+		},
+		{
+			"name": "css",
+			"path": "../project-e-commerce-shoes/css"
+		},
+		{
+			"name": "images",
+			"path": "../project-e-commerce-shoes/images"
+		}
+	],
+	"settings": {}
+}
