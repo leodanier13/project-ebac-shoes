@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #007BE6;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+}
+
+header nav li {
+    margin-left: 32px;
+    color: #ffffff;
+    font-size: 22px;
+    display: inline;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section h2 {
+    color: #007BE6;
+    padding: 1.6rem 0;
+    margin-bottom: 32px;
+}
+
+
+section .container {
+    align-items: flex-start;
+}
+
+.store-logo {
+    margin-right: 3em;
+}
+
+.sobre {
+    margin-bottom: 10px;
+}
+
+.sobre a {
+    display: flex;
+    font-size: 2em;
+}
+
+.sobre img {
+    border: 1px solid transparent;
+    overflow: hidden;
+    width: 109%;
+    height: 369px;
+    margin-right: 48px;
+    padding: 32px;
+}
+
+section .sobre {
+    color: #3FA6EB;
+    
+}
+
+section hr {
+    color: #3FA6EB;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.conteudo {
+    display: grid;
+    padding: 16px 0;
+}
+
+.destaque {
+    margin-bottom: 56px;
+}
+
+.destaque .produto a {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.destaque .produto img {
+    margin-right: 8px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.45%);
+    column-gap: 3%;
+    row-gap: 5%;
+    padding: 32px;
+}
+
+article h3 {
+    padding: 16px 0;
+    font-size: 1.4rem;
+}
+
+article p {
+    height: 48px;
+}
+
+button {
+    background-color: #007BE6;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 769px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .destaque .produto a {
+        display: block;
+        font-size: 1em;
+    }
+
+    .destaque .produto img {
+        margin-right: 0;
+    }
+
+    .produtos {
+        display: block;
+    }
+    
+    .produtos .produto {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+}
